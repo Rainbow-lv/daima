@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dip_10"
+        android:layout_marginTop="@dimen/dip_10"
+        android:background="@drawable/shape_border">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip_10"
+            android:layout_marginTop="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/foot_image"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/foot_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卡帝乐鳄鱼" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dip_10"
+            android:layout_below="@+id/linear">
+
+            <TextView
+                android:id="@+id/foot_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥109.00"
+                android:textColor="#ff0000"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/foot_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dip_20"
+                android:text="已浏览"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/foot_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:text="2018"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_below="@+id/relative_lay"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dip_10"
+            android:layout_marginRight="@dimen/dip_20"/>
+    </RelativeLayout>
+
+</LinearLayout>

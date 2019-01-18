@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dip_10"
+    android:background="@drawable/shape_border">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/details_header"
+            android:layout_width="50dp"
+            app:roundAsCircle="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/details_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="昵称"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/details_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:textColor="#666666"
+                android:text="时间"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/details_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginLeft="10dp"
+        android:text="时间"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/details_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

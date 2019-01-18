@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:orientation="vertical"
+    tools:context=".ZFActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="138dp"
+        android:text="选择支付方式"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/login_lock"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/login_icon_locktwo" />
+
+            <EditText
+                android:id="@+id/login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/login_lock"
+                android:background="@android:color/transparent"
+                android:hint="登录密码"
+                android:paddingBottom="10dp"
+                android:password="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/login_eyes"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/login_icon_eyetwo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/login_lock"
+                android:background="#cccccc"></View>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

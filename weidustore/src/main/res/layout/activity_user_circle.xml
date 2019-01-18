@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserCircleActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/dip_20"
+            android:text="我的圈子"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:id="@+id/my_zl"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/usercircle_delete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/deletetwo"
+            android:layout_marginTop="@dimen/dip_20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"/>
+    </RelativeLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/usercircle_recy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="@dimen/dip_20"
+        android:background="@drawable/shape_border"/>
+</RelativeLayout>

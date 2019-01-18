@@ -1,0 +1,1 @@
+include ':app', ':weidustore', ':dhdraw', ':jumpdemo', ':jumpdemo02', ':runnabledemo', ':day20'

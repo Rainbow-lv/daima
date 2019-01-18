@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignParentBottom="true">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/radio_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/home_bg"
+             />
+
+        <RadioButton
+            android:id="@+id/radio_ufo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/ufo_bg"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_car"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/cartwo"
+             />
+
+        <RadioButton
+            android:id="@+id/radio_ben"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/ben_bg"
+             />
+
+        <RadioButton
+            android:id="@+id/radio_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/user_bg"
+            />
+    </RadioGroup>
+
+</RelativeLayout>
